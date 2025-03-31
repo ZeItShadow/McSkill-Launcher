@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<Pane xmlns:fx="http://javafx.com/fxml/1" fx:id="layout" prefHeight="600.0" prefWidth="800.0"
+      xmlns="http://javafx.com/javafx/16">
+    <stylesheets>
+        <URL value="@main.css"/>
+    </stylesheets>
+
+    <Pane fx:id="dim" prefHeight="600.0" prefWidth="800.0" style="z-index: 10;"/>
+    <Pane fx:id="header" prefHeight="76.0" prefWidth="800.0">
+        <Button fx:id="close" layoutX="778.0" layoutY="2.0" mnemonicParsing="false">
+            <styleClass>
+                <String fx:value="HideButton"/>
+                <String fx:value="CloseButtonIMG"/>
+            </styleClass>
+        </Button>
+        <Button fx:id="hide" layoutX="754.0" layoutY="2.0" mnemonicParsing="false">
+            <styleClass>
+                <String fx:value="HideButton"/>
+                <String fx:value="HideButtonIMG"/>
+            </styleClass>
+        </Button>
+        <Button fx:id="settings" layoutX="730.0" layoutY="2.0" mnemonicParsing="false">
+            <styleClass>
+                <String fx:value="HideButton"/>
+                <String fx:value="SettingsButtonIMG"/>
+            </styleClass>
+        </Button>
+        <Button fx:id="vk" layoutX="705.0" layoutY="38.0" mnemonicParsing="false" prefHeight="32.0"
+                prefWidth="34.0">
+            <styleClass>
+                <String fx:value="HideButton"/>
+                <String fx:value="VkButtonIMG"/>
+            </styleClass>
+        </Button>
+        <Button fx:id="discord" layoutX="671.0" layoutY="38.0" mnemonicParsing="false" prefHeight="32.0"
+                prefWidth="34.0">
+            <styleClass>
+                <String fx:value="HideButton"/>
+                <String fx:value="DiscordButtonIMG"/>
+            </styleClass>
+        </Button>
+        <Button fx:id="site" layoutX="637.0" layoutY="38.0" mnemonicParsing="false" prefHeight="32.0"
+                prefWidth="34.0">
+            <styleClass>
+                <String fx:value="HideButton"/>
+                <String fx:value="SiteButtonIMG"/>
+            </styleClass>
+        </Button>
+        <Text fx:id="name" layoutX="111.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="HeaderName" wrappingWidth="125.0"/>
+        <HBox layoutX="113.0" layoutY="38.0" prefHeight="28.0" prefWidth="180.0"
+              style="-fx-alignment: center-left;" styleClass="HeaderUserInfoHbox">
+            <children>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@servers/img/ic_ruble.png"/>
+                    </image>
+                </ImageView>
+                <Hyperlink fx:id="realMoney" prefHeight="28.0" prefWidth="57.0" styleClass="HyperLink"/>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@servers/img/ic_emerald.png"/>
+                    </image>
+                </ImageView>
+                <Hyperlink fx:id="money" prefHeight="28.0" prefWidth="57.0" styleClass="HyperLink"/>
+            </children>
+        </HBox>
+        <Rectangle fx:id="avatar" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="48.0" layoutX="55.0"
+                   layoutY="14.0" stroke="BLACK" strokeType="INSIDE" styleClass="AvatarImage" width="48.0"/>
+    </Pane>
+    <ScrollPane layoutY="83.0" prefHeight="519.0" prefWidth="800.0">
+        <VBox fx:id="serversVBox" prefHeight="513.0" prefWidth="784.0" styleClass="GeneralVBox"/>
+    </ScrollPane>
+    <Pane fx:id="lastPlayPane" layoutY="550.0" prefHeight="50.0" prefWidth="800.0" styleClass="LastChoosePane">
+        <Text fx:id="lastPlayTitle" layoutX="41.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="LastPlayText" text="Последний выбор:" wrappingWidth="510.833984375"/>
+        <Button fx:id="lastPlay" layoutX="620.0" layoutY="10.0" mnemonicParsing="false" text="Играть">
+            <styleClass>
+                <String fx:value="HideButton"/>
+                <String fx:value="ServerPlayButton"/>
+            </styleClass>
+        </Button>
+    </Pane>
+</Pane>

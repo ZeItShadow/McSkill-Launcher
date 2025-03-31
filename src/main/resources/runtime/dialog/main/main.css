@@ -1,0 +1,320 @@
+#layout {
+    -fx-background-image: url("img/BG.png");
+    -fx-background-radius: 16px;
+}
+
+#layout > #dim {
+    -fx-opacity: 0.0;
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+#layout > #dim > .processing {
+    -fx-opacity: 0.0;
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+}
+
+.HideButton {
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-cursor: hand;
+}
+
+.CloseButtonIMG {
+    -fx-background-image: url("../auth/img/ic_close.png");
+}
+
+.HideButtonIMG {
+    -fx-background-image: url("../auth/img/ic_hide.png");
+    -fx-background-position: bottom;
+}
+
+.SettingsButtonIMG {
+    -fx-background-image: url("../auth/img/ic_settings.png");
+}
+
+.VkButtonIMG {
+    -fx-background-image: url("img/vk.png");
+}
+
+.DiscordButtonIMG {
+    -fx-background-image: url("img/discord.png");
+}
+
+.SiteButtonIMG {
+    -fx-background-image: url("img/site.png");
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #AD7AEF;
+    -fx-background-radius: 3em;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 100px;
+}
+
+.scroll-bar *.increment-arrow,
+.scroll-bar *.decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+.ServerImage {
+    -fx-stroke-width: 0px;
+    -fx-arc-height: 16px;
+    -fx-arc-width: 16px;
+    -fx-width: 136px;
+    -fx-height: 136px;
+    -fx-max-width: 136px;
+    -fx-max-height: 136px;
+    -fx-pref-height: 136px;
+    -fx-pref-width: 136px;
+    -fx-min-height: 136px;
+}
+
+.ServerStatusIMGNew {
+    -fx-image: url("servers/img/NEW.png");
+    -fx-fit-width: 33;
+    -fx-fit-height: 19;
+    -fx-alignment: center;
+}
+
+.ServerStatusIMGWipe {
+    -fx-image: url("servers/img/wipe.png");
+    -fx-fit-width: 33;
+    -fx-fit-height: 19;
+    -fx-alignment: center;
+}
+
+.ServerStatusIMGTest {
+    -fx-image: url("servers/img/TEST.png");
+    -fx-fit-width: 33;
+    -fx-fit-height: 19;
+    -fx-alignment: center;
+}
+
+.ServerStatusIMGObt {
+    -fx-image: url("servers/img/OBT.png");
+    -fx-fit-width: 33;
+    -fx-fit-height: 19;
+    -fx-alignment: center;
+}
+
+.ServerStatusIMGBeta {
+    -fx-image: url("servers/img/BETA.png");
+    -fx-fit-width: 33;
+    -fx-fit-height: 19;
+    -fx-alignment: center;
+}
+
+.AvatarImage {
+    -fx-stroke-width: 0px;
+    -fx-arc-height: 50px;
+    -fx-arc-width: 50px;
+    -fx-background-position: center;
+}
+
+.GeneralVBox {
+    -fx-spacing: -16px;
+    -fx-padding: 0 0 38 0;
+}
+
+.GeneralHbox {
+    -fx-alignment: center;
+    -fx-spacing: 6px;
+    -fx-max-width: 784;
+    -fx-max-height: 176;
+    -fx-pref-height: 175;
+    -fx-pref-width: 784;
+    -fx-min-height: 176;
+    -fx-min-width: 784;
+}
+
+.ServerGeneralHbox {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+    -fx-max-width: 374;
+    -fx-max-height: 155;
+    -fx-pref-height: 155;
+    -fx-pref-width: 374;
+    -fx-min-height: 155;
+    -fx-min-width: 374;
+}
+
+.ServerGeneralHbox:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-radius: 8px;
+}
+
+.ServerGeneralHbox:hover .ServerDescriptionText {
+    -fx-fill: rgba(255, 255, 255, 0.92);
+}
+
+.ServerPlayButton:hover {
+    -fx-background-color: #FF844F;
+    -fx-border-color: #EF733D;
+    -fx-border-radius: 2px;
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+}
+
+.ServerGeneralVbox {
+    -fx-alignment: top-left;
+    -fx-spacing: -0.1px;
+    -fx-max-width: 214;
+    -fx-max-height: 136;
+    -fx-pref-height: 136;
+    -fx-pref-width: 214;
+    -fx-min-height: 136;
+    -fx-min-width: 214;
+}
+
+.ServerHeaderHbox {
+    -fx-spacing: 5;
+    -fx-alignment: center-left;
+    -fx-max-width: 214;
+    -fx-max-height: 24.3;
+    -fx-pref-height: 24.3;
+    -fx-pref-width: 214;
+    -fx-min-height: 24.3;
+    -fx-min-width: 214;
+}
+
+.ServerHeaderText {
+    -fx-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.LastPlayText {
+    -fx-fill: rgba(255, 255, 255, 0.79);
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.ServerHeaderInfo {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: bottom;
+    -fx-background-image: url("servers/img/ic_info_round.png");
+    -fx-max-width: 21;
+    -fx-max-height: 19;
+    -fx-pref-height: 19;
+    -fx-pref-width: 21;
+    -fx-min-height: 19;
+    -fx-min-width: 21;
+}
+
+.ServerHeaderInfo:hover {
+    -fx-background-image: url("servers/img/hover/ic_info_round.png");
+}
+
+.ServerDescriptionText {
+    -fx-fill: rgba(255, 255, 255, 0.64);
+    -fx-font-size: 14px;
+}
+
+.ServerPlayButton {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-border-color: #EF733D;
+    -fx-border-radius: 2px;
+    -fx-text-fill: #EF733D;
+    -fx-font-size: 13px;
+    -fx-alignment: center;
+    -fx-max-width: 150;
+    -fx-max-height: 31;
+    -fx-pref-height: 31;
+    -fx-pref-width: 150;
+    -fx-min-height: 31;
+    -fx-min-width: 150;
+}
+
+.ServerPlayHbox {
+    -fx-alignment: bottom-left;
+    -fx-max-width: 214;
+    -fx-max-height: 34.5;
+    -fx-pref-height: 34.5;
+    -fx-pref-width: 214;
+    -fx-min-height: 34.5;
+    -fx-min-width: 214;
+}
+
+.HeaderName {
+    -fx-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 15px;
+}
+
+.HeaderUserInfoHbox {
+    -fx-alignment: center-left;
+    -fx-spacing: 3px;
+}
+
+.imageViewPeople {
+    -fx-fit-width: 16;
+    -fx-fit-height: 21;
+    -fx-image: url("servers/img/ic_group.png");
+}
+
+.imageViewCube {
+    -fx-fit-width: 16;
+    -fx-fit-height: 16;
+    -fx-image: url("servers/img/ic_block.png");
+}
+
+.imageViewEarth {
+    -fx-fit-width: 16;
+    -fx-fit-height: 16;
+    -fx-image: url("servers/img/ic_globe.png");
+}
+
+.imageViewPvp {
+    -fx-fit-width: 16;
+    -fx-fit-height: 19;
+    -fx-image: url("servers/img/ic_pvp.png");
+}
+
+.imageViewFlag {
+    -fx-fit-width: 16;
+    -fx-fit-height: 16;
+    -fx-image: url("servers/img/ic_flag.png");
+}
+
+.HyperLink {
+    -fx-text-fill: rgba(255, 255, 255, 0.64);
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+    -fx-text-decoration: none;
+    -fx-underline: false;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.HyperLink:hover {
+    -fx-text-fill: rgba(255, 255, 255, 0.76);
+}
+
+.LastChoosePane {
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,41 @@
+.updateRoot {
+    -fx-background-color: rgba(51, 53, 62, 0.8);
+    -fx-background-radius: 8px;
+}
+
+#overlay > #utitle {
+    -fx-font-size: 14pt;
+    -fx-alignment: baseline-center;
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+}
+
+#overlay > #description {
+    -fx-alignment: top-left;
+    -fx-wrap-text: true;
+    -fx-text-fill: rgba(255, 255, 255, 0.64);
+}
+
+#overlay > #description.error {
+    -fx-text-fill: #f54949;
+    -fx-alignment: center;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Progress bar */
+#overlay > #progress {
+    -fx-indeterminate-bar-flip: false;
+}
+
+#overlay > #progress > .bar {
+    -fx-background-color: #f04de5;
+    -fx-background-insets: none;
+    -fx-background-radius: 3px;
+    -fx-padding: 0;
+}
+
+#overlay > #progress > .track {
+    -fx-background-color: rgba(255, 255, 255, 0.52);
+    -fx-background-insets: none;
+    -fx-background-radius: 3px;
+}

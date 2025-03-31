@@ -1,0 +1,65 @@
+#overlay {
+    -fx-background-color: rgba(51, 53, 62, 0.9);
+    -fx-background-radius: 16px;
+}
+
+#overlay > #utitle {
+    -fx-font-size: 14pt;
+    -fx-alignment: baseline-center;
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+}
+
+#overlay > #udescription {
+    -fx-font-size: 12pt;
+    -fx-alignment: baseline-center;
+    -fx-text-fill: rgba(255, 255, 255, 0.80);
+}
+
+/* Output */
+#overlay > #output {
+    -fx-background-color: rgba(33, 34, 40, 0.9);
+    -fx-control-inner-background: rgba(33, 34, 40, 0.9);
+    -fx-text-box-border: transparent;
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+    -fx-highlight-fill: #EF733D;
+    -fx-font-family: monospace;
+    -fx-font-size: 10pt;
+}
+
+#overlay > #output:focused {
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+/* Close button */
+#overlay > #forum,
+#overlay > #copy,
+#overlay > #close {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+#overlay > #forum,
+#overlay > #copy {
+    -fx-background-color: transparent;
+    -fx-border-color: #EF733D;
+    -fx-border-radius: 2px;
+    -fx-text-fill: #EF733D;
+}
+
+#overlay > #close {
+    -fx-background-color: #EF733D;
+    -fx-background-radius: 4px;
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+}
+
+#overlay > #forum:hover,
+#overlay > #copy:hover {
+    -fx-background-color: #FF844F;
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+}
+
+#overlay > #close:hover {
+    -fx-background-color: #FF844F;
+}

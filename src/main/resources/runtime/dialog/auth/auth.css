@@ -1,0 +1,121 @@
+#layout {
+    -fx-background-image: url("img/BG.png");
+    -fx-background-color: transparent;
+    -fx-background-radius: 8px;
+}
+
+#layout > #dim {
+    -fx-opacity: 0.0;
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+#layout > #dim > .processing {
+    -fx-opacity: 0.0;
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+}
+
+.HideButton {
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-width: 16px;
+    -fx-height: 16px;
+    -fx-cursor: hand;
+}
+
+.CloseButtonIMG {
+    -fx-background-image: url("img/ic_close.png");
+}
+
+.HideButtonIMG {
+    -fx-background-image: url("img/ic_hide.png");
+    -fx-background-position: bottom;
+}
+
+.SettingsButtonIMG {
+    -fx-background-image: url("img/ic_settings.png");
+}
+
+.TextField {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.92);
+    -fx-border-radius: 4px;
+    -fx-alignment: center;
+    -fx-font-size: 16px;
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left;
+    -fx-cursor: text;
+}
+
+.TextField:hover,
+.TextField:focus {
+    -fx-border-color: #EF733D;
+}
+
+.LoginField {
+    -fx-background-image: url("img/ic_user.png");
+}
+
+.PasswordFeild {
+    -fx-background-image: url("img/ic_key.png");
+}
+
+.CheckBox {
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.CheckBox:hover {
+    -fx-text-fill: #EF733D;
+}
+
+.CheckBox > .box {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.92);
+    -fx-border-radius: 4px;
+    -fx-border-width: 1.5;
+}
+
+.CheckBox:selected > .box {
+    -fx-background-color: #EF733D;
+    -fx-background-radius: 4px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0px;
+}
+
+.CheckBox:selected > .box > .mark,
+.CheckBox:indeterminate > .box > .mark {
+    -fx-background-color: #FFFFFF;
+}
+
+
+.PlayButton {
+    -fx-background-color: #EF733D;
+    -fx-background-radius: 4px;
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+}
+
+.PlayButton:hover {
+    -fx-background-color: #FF844F;
+}
+
+.HyperLink {
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+    -fx-text-decoration: none;
+    -fx-underline: false;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.HyperLink:hover {
+    -fx-text-fill: #EF733D;
+}

@@ -1,0 +1,132 @@
+.MainSettings {
+    -fx-background-color: rgba(51, 53, 62, 0.9);
+    -fx-background-radius: 16px;
+}
+
+.SettingsLable {
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.SecondLable {
+    -fx-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.OtherText {
+    -fx-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 14px;
+}
+
+.HideText {
+    -fx-text-fill: rgba(255, 255, 255, 0.3);
+    -fx-font-size: 16px;
+    -fx-text-decoration: none;
+    -fx-underline: false;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.PatchHBox {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.92);
+    -fx-border-radius: 4px;
+    -fx-spacing: 5px;
+    -fx-alignment: center-left;
+}
+
+.HideButton {
+    -fx-background-color: transparent;
+    -fx-max-height: 40px;
+    -fx-max-weight: 40px;
+    -fx-background-position: center;
+}
+
+.ChangeButton {
+    -fx-background-image: url("img/change.png");
+    -fx-cursor: hand;
+}
+
+.DeleteButton {
+    -fx-background-image: url("img/delete.png");
+    -fx-cursor: hand;
+}
+
+.ChangeButton:hover {
+    -fx-background-image: url("img/hover/change.png");
+}
+
+.DeleteButton:hover {
+    -fx-background-image: url("img/hover/delete.png");
+}
+
+
+.CheckBox {
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 12.5px;
+    -fx-cursor: hand;
+}
+
+.CheckBox:hover {
+    -fx-text-fill: #EF733D;
+}
+
+.CheckBox > .box {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.92);
+    -fx-border-radius: 4px;
+    -fx-border-width: 1.5;
+}
+
+.CheckBox:selected > .box {
+    -fx-background-color: #EF733D;
+    -fx-background-radius: 4px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0px;
+}
+
+.CheckBox:selected > .box > .mark,
+.CheckBox:indeterminate > .box > .mark {
+    -fx-background-color: #FFFFFF;
+}
+
+.AcceptButton {
+    -fx-background-color: #EF733D;
+    -fx-background-radius: 4px;
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.AcceptButton:hover {
+    -fx-background-color: #FF844F;
+}
+
+#overlay > #ramSlider > .track {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-background-insets: none;
+    -fx-background-radius: 8px;
+    -fx-padding: 7px;
+}
+
+#overlay > #ramSlider > .thumb {
+    -fx-background-color: #EF733D;
+    -fx-background-insets: none;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+}
+
+#overlay > #ramSlider:hover > .thumb {
+    -fx-background-color: #FF844F;
+}
+
+#overlay > #ramSlider:pressed > .thumb {
+    -fx-background-color: #FF844F;
+}
+
+#overlay > #ramSlider > .axis {
+    -fx-tick-label-fill: rgba(255, 255, 255, 0.7);
+}
